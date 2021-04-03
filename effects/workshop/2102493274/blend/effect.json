@@ -1,0 +1,19 @@
+{
+	"dependencies" : 
+	[
+		"materials/workshop/2102493274/effects/blend.json",
+		"shaders/workshop/2102493274/effects/blend.frag",
+		"shaders/workshop/2102493274/effects/blend.vert"
+	],
+	"description" : "ui_editor_effect_blend_description",
+	"group" : "colorize",
+	"name" : "ui_editor_effect_blend_title",
+	"passes" : 
+	[
+		{
+			"material" : "materials/workshop/2102493274/effects/blend.json"
+		}
+	],
+	"preview" : "preview/project.json",
+	"version" : 1
+}

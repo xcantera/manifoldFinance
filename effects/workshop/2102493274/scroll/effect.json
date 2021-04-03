@@ -1,0 +1,19 @@
+{
+	"dependencies" : 
+	[
+		"materials/workshop/2102493274/effects/scroll.json",
+		"shaders/workshop/2102493274/effects/scroll.frag",
+		"shaders/workshop/2102493274/effects/scroll.vert"
+	],
+	"description" : "ui_editor_effect_scroll_description",
+	"group" : "animate",
+	"name" : "ui_editor_effect_scroll_title",
+	"passes" : 
+	[
+		{
+			"material" : "materials/workshop/2102493274/effects/scroll.json"
+		}
+	],
+	"preview" : "preview/project.json",
+	"version" : 1
+}

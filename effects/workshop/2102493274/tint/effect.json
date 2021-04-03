@@ -1,0 +1,19 @@
+{
+	"dependencies" : 
+	[
+		"materials/workshop/2102493274/effects/tint.json",
+		"shaders/workshop/2102493274/effects/tint.frag",
+		"shaders/workshop/2102493274/effects/tint.vert"
+	],
+	"description" : "ui_editor_effect_tint_description",
+	"group" : "colorize",
+	"name" : "ui_editor_effect_tint_title",
+	"passes" : 
+	[
+		{
+			"material" : "materials/workshop/2102493274/effects/tint.json"
+		}
+	],
+	"preview" : "preview/project.json",
+	"version" : 1
+}

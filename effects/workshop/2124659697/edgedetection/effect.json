@@ -1,0 +1,19 @@
+{
+	"dependencies" : 
+	[
+		"materials/workshop/2124659697/effects/edgedetection.json",
+		"shaders/workshop/2124659697/effects/edgedetection.frag",
+		"shaders/workshop/2124659697/effects/edgedetection.vert"
+	],
+	"description" : "ui_editor_effect_edge_detection_description",
+	"group" : "enhance",
+	"name" : "ui_editor_effect_edge_detection_title",
+	"passes" : 
+	[
+		{
+			"material" : "materials/workshop/2124659697/effects/edgedetection.json"
+		}
+	],
+	"preview" : "preview/project.json",
+	"version" : 1
+}

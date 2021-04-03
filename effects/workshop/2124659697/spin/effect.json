@@ -1,0 +1,19 @@
+{
+	"dependencies" : 
+	[
+		"materials/workshop/2124659697/effects/spin.json",
+		"shaders/workshop/2124659697/effects/spin.frag",
+		"shaders/workshop/2124659697/effects/spin.vert"
+	],
+	"description" : "ui_editor_effect_spin_description",
+	"group" : "animate",
+	"name" : "ui_editor_effect_spin_title",
+	"passes" : 
+	[
+		{
+			"material" : "materials/workshop/2124659697/effects/spin.json"
+		}
+	],
+	"preview" : "preview/project.json",
+	"version" : 1
+}

@@ -1,0 +1,19 @@
+{
+	"dependencies" : 
+	[
+		"materials/workshop/2123274886/effects/tech_circle.json",
+		"shaders/workshop/2123274886/effects/tech_circle.frag",
+		"shaders/workshop/2123274886/effects/tech_circle.vert"
+	],
+	"editable" : false,
+	"group" : "localeffects",
+	"name" : "Tech Circle",
+	"passes" : 
+	[
+		{
+			"material" : "materials/workshop/2123274886/effects/tech_circle.json"
+		}
+	],
+	"replacementkey" : "tech_circle",
+	"version" : 1
+}

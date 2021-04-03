@@ -1,0 +1,97 @@
+{
+	"dependencies" : 
+	[
+		"materials/workshop/2102493274/effects/godrays_downsample2.json",
+		"materials/workshop/2102493274/effects/godrays_cast.json",
+		"materials/workshop/2102493274/effects/godrays_gaussian_x.json",
+		"materials/workshop/2102493274/effects/godrays_gaussian_y.json",
+		"materials/workshop/2102493274/effects/godrays_combine.json",
+		"shaders/workshop/2102493274/effects/godrays_downsample2.frag",
+		"shaders/workshop/2102493274/effects/godrays_downsample2.vert",
+		"shaders/workshop/2102493274/effects/godrays_cast.frag",
+		"shaders/workshop/2102493274/effects/godrays_cast.vert",
+		"shaders/workshop/2102493274/effects/godrays_gaussian.frag",
+		"shaders/workshop/2102493274/effects/godrays_gaussian.vert",
+		"shaders/workshop/2102493274/effects/godrays_combine.frag",
+		"shaders/workshop/2102493274/effects/godrays_combine.vert"
+	],
+	"description" : "ui_editor_effect_godrays_description",
+	"fbos" : 
+	[
+		{
+			"format" : "rgba8888",
+			"name" : "_rt_HalfCompoBuffer1",
+			"scale" : 2
+		},
+		{
+			"format" : "rgba8888",
+			"name" : "_rt_HalfCompoBuffer2",
+			"scale" : 2
+		}
+	],
+	"group" : "enhance",
+	"name" : "ui_editor_effect_godrays_title",
+	"passes" : 
+	[
+		{
+			"bind" : 
+			[
+				{
+					"index" : 0,
+					"name" : "previous"
+				}
+			],
+			"material" : "materials/workshop/2102493274/effects/godrays_downsample2.json",
+			"target" : "_rt_HalfCompoBuffer1"
+		},
+		{
+			"bind" : 
+			[
+				{
+					"index" : 0,
+					"name" : "_rt_HalfCompoBuffer1"
+				}
+			],
+			"material" : "materials/workshop/2102493274/effects/godrays_cast.json",
+			"target" : "_rt_HalfCompoBuffer2"
+		},
+		{
+			"bind" : 
+			[
+				{
+					"index" : 0,
+					"name" : "_rt_HalfCompoBuffer2"
+				}
+			],
+			"material" : "materials/workshop/2102493274/effects/godrays_gaussian_x.json",
+			"target" : "_rt_HalfCompoBuffer1"
+		},
+		{
+			"bind" : 
+			[
+				{
+					"index" : 0,
+					"name" : "_rt_HalfCompoBuffer1"
+				}
+			],
+			"material" : "materials/workshop/2102493274/effects/godrays_gaussian_y.json",
+			"target" : "_rt_HalfCompoBuffer2"
+		},
+		{
+			"bind" : 
+			[
+				{
+					"index" : 0,
+					"name" : "_rt_HalfCompoBuffer2"
+				},
+				{
+					"index" : 1,
+					"name" : "previous"
+				}
+			],
+			"material" : "materials/workshop/2102493274/effects/godrays_combine.json"
+		}
+	],
+	"preview" : "preview/project.json",
+	"version" : 1
+}
