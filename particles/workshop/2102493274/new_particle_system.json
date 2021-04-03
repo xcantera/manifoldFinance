@@ -1,0 +1,92 @@
+{
+	"children" : null,
+	"controlpoint" : 
+	[
+		{
+			"id" : 0
+		},
+		{
+			"id" : 1
+		},
+		{
+			"id" : 2
+		},
+		{
+			"id" : 3
+		},
+		{
+			"id" : 4
+		},
+		{
+			"id" : 5
+		},
+		{
+			"id" : 6
+		},
+		{
+			"id" : 7
+		}
+	],
+	"emitter" : 
+	[
+		{
+			"directions" : "1 1 0",
+			"distancemax" : 512,
+			"distancemin" : 32,
+			"id" : 6,
+			"name" : "sphererandom",
+			"origin" : "0 0 0",
+			"rate" : 20
+		}
+	],
+	"initializer" : 
+	[
+		{
+			"id" : 2,
+			"max" : 5,
+			"min" : 3,
+			"name" : "lifetimerandom"
+		},
+		{
+			"id" : 3,
+			"max" : 200,
+			"min" : 50,
+			"name" : "sizerandom"
+		},
+		{
+			"id" : 4,
+			"max" : "50 50 0",
+			"min" : "-50 -50 0",
+			"name" : "velocityrandom"
+		},
+		{
+			"id" : 5,
+			"max" : "255 255 255",
+			"min" : "255 255 255",
+			"name" : "colorrandom"
+		}
+	],
+	"material" : "materials/workshop/2102493274/particle/halo_1.json",
+	"maxcount" : 500,
+	"operator" : 
+	[
+		{
+			"gravity" : "0 0 0",
+			"id" : 7,
+			"name" : "movement"
+		},
+		{
+			"fadeintime" : 0.5,
+			"id" : 8,
+			"name" : "alphafade"
+		}
+	],
+	"renderer" : 
+	[
+		{
+			"id" : 1,
+			"name" : "sprite"
+		}
+	],
+	"starttime" : 0
+}
