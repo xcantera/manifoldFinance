@@ -1,0 +1,434 @@
+{
+	"camera" : 
+	{
+		"center" : "0.00000 0.00000 -1.00000",
+		"eye" : "0.00000 0.00000 0.00000",
+		"up" : "0.00000 1.00000 0.00000"
+	},
+	"general" : 
+	{
+		"ambientcolor" : "0.30000 0.30000 0.30000",
+		"bloom" : false,
+		"bloomhdrfeather" : 0.10000000149011612,
+		"bloomhdrscatter" : 1.6189999580383301,
+		"bloomhdrstrength" : 2.0,
+		"bloomhdrthreshold" : 1.0,
+		"bloomstrength" : 2.0,
+		"bloomthreshold" : 0.64999997615814209,
+		"camerafade" : true,
+		"cameraparallax" : false,
+		"cameraparallaxamount" : 0.5,
+		"cameraparallaxdelay" : 0.10000000149011612,
+		"cameraparallaxmouseinfluence" : 0.5,
+		"camerapreview" : true,
+		"camerashake" : false,
+		"camerashakeamplitude" : 0.5,
+		"camerashakeroughness" : 1.0,
+		"camerashakespeed" : 3.0,
+		"clearcolor" : "0.70000 0.70000 0.70000",
+		"clearenabled" : true,
+		"farz" : 10000.0,
+		"fov" : 50.0,
+		"hdr" : false,
+		"nearz" : 0.0099999997764825821,
+		"orthogonalprojection" : 
+		{
+			"height" : 826,
+			"width" : 860
+		},
+		"skylightcolor" : "0.30000 0.30000 0.30000",
+		"zoom" : 1.0
+	},
+	"objects" : 
+	[
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"angles" : "0.00000 0.00000 0.00000",
+			"brightness" : 1.0,
+			"color" : "0.08200 0.07500 0.16900",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"id" : 50,
+			"image" : "models/util/solidlayer.json",
+			"ledsource" : false,
+			"locktransforms" : false,
+			"name" : "Solid",
+			"origin" : "99.50954 -540.93140 0.00000",
+			"parallaxDepth" : "1.00000 1.00000",
+			"perspective" : false,
+			"scale" : "11.80473 12.65611 7.24991",
+			"size" : "3840.00000 2160.00000",
+			"solid" : true,
+			"visible" : true
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"angles" : "0.00000 0.00000 0.00000",
+			"brightness" : 1.0,
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"id" : 13,
+			"image" : "models/WUdvP-Tn_400x400 (1).json",
+			"ledsource" : false,
+			"locktransforms" : false,
+			"name" : "WUdvP-Tn_400x400 (1)",
+			"origin" : "425.67737 411.48792 0.00000",
+			"parallaxDepth" : "1.00000 1.00000",
+			"perspective" : false,
+			"scale" : "1.00000 1.00000 1.00000",
+			"size" : "192.00000 192.00000",
+			"solid" : true,
+			"visible" : true
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"angles" : "0.00000 0.00000 0.00000",
+			"brightness" : 1.0,
+			"color" : "0.11765 0.27059 0.87451",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"effects" : 
+			[
+				{
+					"file" : "effects/workshop/2124659697/edgedetection/effect.json",
+					"id" : 25,
+					"name" : "Coloring",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"BLENDMODE" : 30
+							},
+							"constantshadervalues" : 
+							{
+								"alpha" : 1,
+								"backgroundcolor" : 
+								{
+									"user" : null,
+									"value" : "0.000 1.000 1.000"
+								},
+								"multiply" : 0.5,
+								"outlinecolor" : 
+								{
+									"user" : null,
+									"value" : "1.000 0.000 1.000"
+								},
+								"size" : 3.5,
+								"threshold" : 0.29999999999999999
+							},
+							"id" : 26
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/workshop/2124659697/pulse/effect.json",
+					"id" : 27,
+					"name" : "Audio Responsive Pulse",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 4,
+								"audiobounds" : "0.5 1",
+								"audioexponent" : 0.34999999999999998,
+								"frequencymax" : 16,
+								"tinthigh" : 
+								{
+									"script" : null,
+									"value" : "1.000 1.000 1.000"
+								},
+								"tintlow" : "0.8 0.8 0.8"
+							},
+							"id" : 28
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/workshop/2124659697/colorkey/effect.json",
+					"id" : 29,
+					"name" : "!Don't Touch!",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"FLATTEN" : 1,
+								"INVERT" : 0
+							},
+							"constantshadervalues" : 
+							{
+								"alpha" : 0.0,
+								"color" : "0 0 0",
+								"fuzziness" : 1.5,
+								"tolerance" : 0.10000000000000001
+							},
+							"id" : 30
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/workshop/2124659697/spin/effect.json",
+					"id" : 31,
+					"name" : "Spin Rate",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"MODE" : 1,
+								"REPEAT" : 0
+							},
+							"constantshadervalues" : 
+							{
+								"speed" : 
+								{
+									"script" : null,
+									"value" : 0.25
+								}
+							},
+							"id" : 32
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 22,
+			"image" : "models/workshop/2124659697/giphy.json",
+			"ledsource" : false,
+			"locktransforms" : false,
+			"name" : "Manifold assest",
+			"origin" : "416.21765 416.21783 0.00000",
+			"parallaxDepth" : "1.00000 1.00000",
+			"perspective" : true,
+			"scale" : "1.01957 1.01957 1.01957",
+			"size" : "540.00000 540.00000",
+			"solid" : false,
+			"visible" : true
+		},
+		{
+			"alpha" : 1.0,
+			"anchor" : "none",
+			"angles" : "0.00000 0.00000 0.00000",
+			"backgroundbrightness" : 1.0,
+			"backgroundcolor" : "0.00000 0.00000 0.00000",
+			"brightness" : 1.0,
+			"color" : "0.00000 0.20784 0.54510",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"font" : "fonts/8bitOperatorPlus8-Regular.ttf",
+			"horizontalalign" : "center",
+			"id" : 49,
+			"ledsource" : false,
+			"locktransforms" : false,
+			"name" : "Text Layer",
+			"opaquebackground" : false,
+			"origin" : "373.64917 31.48766 0.00000",
+			"padding" : 32,
+			"parallaxDepth" : "1.00000 1.00000",
+			"perspective" : false,
+			"pointsize" : 32.0,
+			"scale" : "2.12005 2.12005 2.12005",
+			"size" : "1201.00000 153.00000",
+			"solid" : true,
+			"text" : "Manifold Finance",
+			"verticalalign" : "center",
+			"visible" : true
+		},
+		{
+			"angles" : "0.00000 0.00000 -0.97900",
+			"id" : 51,
+			"image" : null,
+			"instanceoverride" : 
+			{
+				"alpha" : 0.5,
+				"colorn" : "1 1 1",
+				"count" : 0.050000000000000003,
+				"id" : 0,
+				"size" : 0.20000000000000001
+			},
+			"locktransforms" : true,
+			"model" : null,
+			"name" : "Drops",
+			"origin" : "634.12622 145.89163 0.00000",
+			"parallaxDepth" : "1.00000 1.00000",
+			"particle" : "particles/workshop/2102493274/presets/trail_2.json",
+			"scale" : "4.73700 4.73700 4.73700",
+			"visible" : true
+		},
+		{
+			"angles" : "0.00000 0.00000 -0.72000",
+			"id" : 57,
+			"image" : null,
+			"instanceoverride" : 
+			{
+				"alpha" : 5,
+				"colorn" : "1 1 1",
+				"count" : 0.20000000000000001,
+				"id" : 0
+			},
+			"locktransforms" : true,
+			"model" : null,
+			"name" : "Snow perspective",
+			"origin" : "-69.10181 -395.24240 0.00000",
+			"parallaxDepth" : "1.00000 1.00000",
+			"particle" : "particles/workshop/2102493274/presets/snowperspective.json",
+			"scale" : "1.00000 1.00000 1.00000",
+			"visible" : true
+		},
+		{
+			"angles" : "0.00000 0.00000 0.00000",
+			"id" : 62,
+			"instanceoverride" : 
+			{
+				"id" : 0,
+				"lifetime" : 2,
+				"rate" : 2,
+				"size" : 0.29999999999999999,
+				"speed" : 0.001
+			},
+			"locktransforms" : true,
+			"name" : "new particle system",
+			"origin" : "656.36523 725.06665 0.00000",
+			"parallaxDepth" : "1.00000 1.00000",
+			"particle" : "particles/workshop/2102493274/new_particle_system.json",
+			"scale" : "3.99500 3.99500 3.99500",
+			"visible" : true
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"angles" : "0.00000 0.00000 0.00000",
+			"brightness" : 1.0,
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"effects" : 
+			[
+				{
+					"file" : "effects/workshop/2102493274/scroll/effect.json",
+					"id" : 105,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"repeat" : "0.5 0.5",
+								"speedx" : -0.25
+							},
+							"id" : 106
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/workshop/2102493274/transform/effect.json",
+					"id" : 107,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"CLAMP" : 0,
+								"MODE" : 0
+							},
+							"constantshadervalues" : 
+							{
+								"angle" : 3.7999999999999998
+							},
+							"id" : 108
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 48,
+			"image" : "models/workshop/2102493274/Sky kawaii.json",
+			"ledsource" : false,
+			"locktransforms" : true,
+			"name" : "Sky kawaii",
+			"origin" : "-445.49170 -540.93140 0.00000",
+			"parallaxDepth" : "1.00000 1.00000",
+			"perspective" : false,
+			"scale" : "1.00000 1.00000 1.00000",
+			"size" : "1920.00000 1080.00000",
+			"solid" : true,
+			"visible" : false
+		},
+		{
+			"angles" : "0.00000 0.00000 -0.72000",
+			"id" : 120,
+			"image" : null,
+			"instanceoverride" : 
+			{
+				"alpha" : 5,
+				"colorn" : "1 1 1",
+				"count" : 0.10000000000000001,
+				"id" : 0
+			},
+			"locktransforms" : true,
+			"model" : null,
+			"name" : "Snow perspective",
+			"origin" : "-173.70264 -413.45737 0.00000",
+			"parallaxDepth" : "1.00000 1.00000",
+			"particle" : "particles/workshop/2102493274/presets/snowperspective.json",
+			"scale" : "1.00000 1.00000 1.00000",
+			"visible" : true
+		},
+		{
+			"angles" : "0.00000 0.00000 -1.19900",
+			"id" : 123,
+			"image" : null,
+			"instanceoverride" : 
+			{
+				"alpha" : 0.5,
+				"colorn" : "0.8980392156862745 1 1",
+				"id" : 0,
+				"speed" : 0.001
+			},
+			"locktransforms" : true,
+			"model" : null,
+			"name" : "Light shafts 1",
+			"origin" : "-566.81274 -645.05542 0.00000",
+			"parallaxDepth" : "1.00000 1.00000",
+			"particle" : "particles/workshop/2102493274/presets/light_shafts_1.json",
+			"scale" : "4.49000 5.10700 1.00000",
+			"visible" : true
+		},
+		{
+			"angles" : "0.00000 -0.00000 0.68300",
+			"id" : 129,
+			"image" : null,
+			"instanceoverride" : 
+			{
+				"alpha" : 5,
+				"colorn" : "1 1 1",
+				"id" : 0,
+				"lifetime" : 2
+			},
+			"locktransforms" : true,
+			"model" : null,
+			"name" : "Dust motes",
+			"origin" : "406.18921 245.45963 0.00000",
+			"parallaxDepth" : "1.00000 1.00000",
+			"particle" : "particles/workshop/2102493274/presets/dust_motes_0.json",
+			"scale" : "2.13300 2.13300 2.13300",
+			"visible" : true
+		}
+	],
+	"version" : 1
+}
