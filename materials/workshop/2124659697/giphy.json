@@ -1,0 +1,17 @@
+{
+	"passes" : 
+	[
+		{
+			"blending" : "translucent",
+			"combos" : 
+			{
+				"spritesheet" : 1
+			},
+			"cullmode" : "nocull",
+			"depthtest" : "disabled",
+			"depthwrite" : "disabled",
+			"shader" : "genericimage2",
+			"textures" : [ "workshop/2124659697/ello-2b64ff6c-8622-4f52-b680-84384d5e6ab8" ]
+		}
+	]
+}

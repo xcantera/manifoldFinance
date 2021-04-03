@@ -1,0 +1,16 @@
+{
+	"passes" : 
+	[
+		{
+			"blending" : "normal",
+			"combos" : 
+			{
+				"VERTICAL" : 1
+			},
+			"cullmode" : "nocull",
+			"depthtest" : "disabled",
+			"depthwrite" : "disabled",
+			"shader" : "workshop/2102493274/effects/godrays_gaussian"
+		}
+	]
+}
